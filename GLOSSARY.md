@@ -52,6 +52,14 @@ _Avoid_: Diff, improvement
 A fact missing from the Source Prompt that the Enhanced Prompt fills with a guess, flagged so the user can check it.
 _Avoid_: Default, placeholder
 
+**Outcome Ask**:
+Something the Source Prompt explicitly asks for about the result or the model's behaviour (persistence, a format, an opening line, a length). Enhancing may reword it but never overrules it.
+_Avoid_: Requirement, user instruction
+
+**Method Instruction**:
+Something the Source Prompt tells the model to do on the way to the result (read every file first, think step by step, use caps for emphasis). When a rule flags it as an anti-pattern, Enhancing rewrites it and quotes the original.
+_Avoid_: Process step, technique
+
 **Clarifying Question**:
 A question asked before Enhancing, only when a missing fact would materially change the Enhanced Prompt. At most about three are asked per run.
 _Avoid_: Interview, follow-up
